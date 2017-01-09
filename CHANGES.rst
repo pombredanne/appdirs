@@ -1,6 +1,30 @@
 appdirs Changelog
 =================
 
+appdirs 1.4.1 (dev)
+-------------------
+
+- [issue #38] Fix _winreg import on Windows Py3
+
+appdirs 1.4.0
+-------------
+- [PR #42] AppAuthor is now optional on Windows
+- [issue 41] Support Jython on Windows, Mac, and Unix-like platforms. Windows
+  support requires `JNA <https://github.com/twall/jna>`_.
+- [PR #44] Fix incorrect behaviour of the site_config_dir method
+
+appdirs 1.3.0
+-------------
+- [Unix, issue 16] Conform to XDG standard, instead of breaking it for
+  everybody
+- [Unix] Removes gratuitous case mangling of the case, since \*nix-es are
+  usually case sensitive, so mangling is not wise
+- [Unix] Fixes the uterly wrong behaviour in ``site_data_dir``, return result
+  based on XDG_DATA_DIRS and make room for respecting the standard which
+  specifies XDG_DATA_DIRS is a multiple-value variable
+- [Issue 6] Add ``*_config_dir`` which are distinct on nix-es, according to
+  XDG specs; on Windows and Mac return the corresponding ``*_data_dir``
+
 appdirs 1.2.0
 -------------
 
