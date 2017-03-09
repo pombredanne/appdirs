@@ -1,10 +1,21 @@
 appdirs Changelog
 =================
 
-appdirs 1.4.1 (dev)
--------------------
+appdirs 1.4.3
+-------------
+- [PR #76] Python 3.6 invalid escape sequence deprecation fixes
+- Fix for Python 3.6 support
 
+appdirs 1.4.2
+-------------
+- [PR #84] Allow installing without setuptools
+- [PR #86] Fix string delimiters in setup.py description
+- Add Python 3.6 support
+
+appdirs 1.4.1
+-------------
 - [issue #38] Fix _winreg import on Windows Py3
+- [issue #55] Make appname optional
 
 appdirs 1.4.0
 -------------
@@ -19,7 +30,7 @@ appdirs 1.3.0
   everybody
 - [Unix] Removes gratuitous case mangling of the case, since \*nix-es are
   usually case sensitive, so mangling is not wise
-- [Unix] Fixes the uterly wrong behaviour in ``site_data_dir``, return result
+- [Unix] Fixes the utterly wrong behaviour in ``site_data_dir``, return result
   based on XDG_DATA_DIRS and make room for respecting the standard which
   specifies XDG_DATA_DIRS is a multiple-value variable
 - [Issue 6] Add ``*_config_dir`` which are distinct on nix-es, according to
